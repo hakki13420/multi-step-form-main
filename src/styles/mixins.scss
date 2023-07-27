@@ -1,0 +1,21 @@
+
+@mixin dflex($dir, $jc, $ai, $gap){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+
+
+@mixin button($width, $height, $padding, $radius, $bg, $fColor){
+    background-color: $bg;
+    padding: $padding;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    color: $fColor;
+    outline: none;
+    border: none;
+}

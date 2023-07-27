@@ -1,0 +1,50 @@
+.form-container{
+  @include dflex(column ,space-between, unset, 1rem);
+  height: 100%;
+}
+
+.form-column{
+  @include dflex(column, unset, unset, 1.5rem);
+}
+
+.form-row{
+  @include dflex(row, center, unset, 1rem);
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:375px) {
+
+  .form-column{
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+  }    
+  .form-row{
+    gap: 1rem;
+   }
+}
+
+
+@media screen and (max-width:760px) {
+  .form-row{
+    @include dflex(column, center, center, 1rem);
+  }
+   
+}
+
+@media screen and (min-width:420px) and (max-width:465px) {
+  .form-row{
+   gap: 2rem;
+  }       
+ }
+
+ @media screen and (min-width:401px) and (max-width:419px) {
+  .form-row{
+   gap: 3rem;
+  }       
+ }
+ @media screen and (min-width:376px) and (max-width:400px) {
+  .form-row{
+   gap: 4rem;
+  }       
+ }

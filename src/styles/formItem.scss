@@ -1,0 +1,32 @@
+.formItem{
+    @include dflex(column, unset, unset, 10px);
+    .meta{
+        @include dflex(row, space-between, center, unset);
+        .error{
+            color :$StrawberryRed;
+            font-style: italic;
+            padding-inline: 20px;
+        }
+    }
+    label{
+        font-size: 0.9rem;
+        color: $MarineBlue;
+        font-weight: 700;
+    }
+    .input-field{
+        padding: 8px 10px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid $LightGray;
+        cursor: pointer;
+        transition: border-color ease 0.4s;
+        &:hover{
+            border-color: $MarineBlue;
+        }
+    }
+}
+
+
+.input-error{
+    border-color: $StrawberryRed!important;
+}

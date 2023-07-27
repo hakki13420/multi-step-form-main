@@ -1,0 +1,83 @@
+
+Arcade
+$9/mo
+
+Advanced
+$12/mo
+
+Pro
+$15/mo
+
+Monthly
+Yearly
+
+Go Back
+Next Step
+
+
+
+
+{
+    "sidebar":[
+        {
+            "id":1,
+            "title":" Step 1",
+            "description":"Your info",
+            "active":1
+        },
+        {
+            "id":2,
+            "title":" Step 2",
+            "description":"Select plan",
+            "active":0
+        },
+        {
+            "id":3,
+            "title":" Step 3",
+            "description":"Add-ons",
+            "active":0
+        },
+        {
+            "id":4,
+            "title":" Step 4",
+            "description":"Summary",
+            "active":0
+        }
+    ],
+    "title":{
+        "title":"Select your plan",
+        "decsription":"You have the option of monthly or yearly billing."
+    },
+    "content":[
+        {
+            "id":1,
+            "label":"Name",
+            "name":"name",
+            "type":"text",
+            "placeholder":"e.g. Stephen King"
+        },
+        {
+            "id":2,
+            "label":"Email Address",
+            "name":"email",
+            "type":"email",
+            "placeholder":"e.g. stephenking@lorem.com"
+        },
+        {
+            "id":3,
+            "label":"Phone Number",
+            "name":"phone",
+            "type":"text",
+            "placeholder":"e.g. +1 234 567 890"
+        }
+  
+    ],
+    "buttons":[
+        {},
+        {
+            "id":1,
+            "title":"Next Step",
+            "type":"next"
+        }
+    ]
+}

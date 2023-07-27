@@ -1,0 +1,77 @@
+
+.checkBoxItemCard{
+
+    width: 100%;
+    padding: 1rem;
+    label{
+        @include dflex(row, unset, center, 2rem);
+        width: 100%;
+        //flex: 1;
+        position: relative;
+        margin-bottom: 1rem;
+        input{
+            width: 25px;
+            height: 25px;
+            z-index: 2;
+            &:checked ~div{
+                background-color: $PastelBlue;
+            }
+        }
+        
+        .add-on-info{
+            @include dflex(row, space-between, center, unset);
+            border: 1px solid blue;
+            position: absolute;
+            width: 100%;
+            padding: 1rem 4rem;
+            left: -1rem;
+            margin-bottom: 10px;
+            border-radius: 5px;
+
+            &-left{
+                @include dflex(column, unset, unset, 10px);
+                .add-on-name{
+                    color: $MarineBlue;
+                    font-weight: 700;
+                }
+                .add-on-desc{
+                    color: $CoolGray;
+                    font-weight: 500;                    
+                }
+            }
+            &-right{
+                color: $PurplishBlue;
+                font-weight: 400;
+            }
+        }
+        
+    }
+    
+
+    @media screen and (max-width:760px) {
+        label{
+            gap: 1rem;
+            input{
+                width: 18px;
+                height: 18px;
+            }
+            .add-on-info{          
+                padding: 1rem 7px 10px 32px; 
+                left: -0.5rem;          
+                &-left{
+                    .add-on-name{
+                        font-size: 12px;
+                    }
+                    .add-on-desc{
+                        font-size: 12px;
+                    }
+                }
+                &-right{
+                    font-size: 11px;
+                }
+            }
+        }              
+    }
+
+        
+}

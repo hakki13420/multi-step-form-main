@@ -1,0 +1,36 @@
+
+.aside-wrapper{
+    grid-area: aside;
+    padding: 10px;
+    display: grid; 
+    
+    .aside{
+        background-image: url('../assets/images/bg-sidebar-desktop.svg');
+        background-size: contain;
+        background-repeat: no-repeat; 
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,60px);
+        padding: 2rem 0;
+        border-radius: 10px;
+        
+    }
+    
+    @media screen and (max-width:375px){ 
+        padding: 0;
+        width: 100%;
+ 
+        .aside{
+          background-image: url('../assets/images/bg-sidebar-mobile.svg');
+          @include dflex(row, center, unset, 10px);
+          border-radius: 0;
+        }
+    }
+
+    @media screen and (max-width:760px) {
+      .aside{
+        background-size: cover;
+      }
+    }
+}

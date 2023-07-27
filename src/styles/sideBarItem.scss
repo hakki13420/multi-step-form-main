@@ -1,0 +1,43 @@
+
+.sideBarItem{
+    @include dflex(row, unset, center, 1rem);    
+    padding: 2rem 1rem;
+    font-weight: 500;
+
+    .active{
+        color:black;
+        background-color: $PastelBlue;
+    }
+    .inactive{
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+    }
+    .left{
+        @include dflex(row, center, center, unset);
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+    .right{
+        @include dflex(column, unset, unset, 3px);
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        .step-name{
+            color: $LightGray;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }    
+        .step-desc{
+            color: $White;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }    
+    }
+
+    @media screen and (max-width:375px) {
+        .right{
+            display: none;
+        }        
+    }
+}

@@ -1,0 +1,34 @@
+.previewItem{
+    @include dflex(row, space-between, unset, unset);
+    padding: 0 0 1rem;
+    cursor: pointer;
+    &-left{
+        @include dflex(column, unset, unset, 1rem);
+        p{
+            color: $CoolGray;
+            font-weight: 500;
+        }
+    }
+    &-right{
+        color: $CoolGray;
+        font-weight: 500;
+    }
+    &:hover {
+        border-bottom: 1px solid $CoolGray;
+    }
+    &:hover a {
+        display: flex;        
+    }
+    &:hover p{
+        color: $MarineBlue;
+        font-weight: 700;
+    }
+    
+    &:hover .previewItem-right{
+        color: $MarineBlue;
+        font-weight: 700;
+    }
+    a{
+        display: none;
+    }
+}

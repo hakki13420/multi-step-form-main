@@ -1,0 +1,79 @@
+.checkBoxItem{
+    background-color: $LightBlue;
+    width: 100%;
+    @include dflex(row , center, center, unset);
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 1rem;
+    
+    label{
+        @include dflex(row, unset, center, unset);
+        position: relative;
+        cursor: pointer;
+        transition: all ease 0.4s;
+        
+        input{
+            display: none;
+            &:checked ~.outer .inner{
+                background-color: white;
+                left:calc(100% - 3px - 20px);
+            }        
+            &:checked ~.outer{
+                background-color: $MarineBlue;
+            }
+            &:checked ~.outer::before{
+                color: $CoolGray;
+            }
+            &:checked ~.outer::after{
+                color: $MarineBlue;
+                font-weight: 700;
+            }
+        }
+        .outer{
+            width: 50px;
+            height: 25px;
+            border-radius: 20px;
+            background-color: $MarineBlue;
+            display: flex;
+            align-items: center;
+            &:before{
+                content:'Monthly';
+                position: absolute;
+                top: calc(50% - 8px);
+                left: -80px;
+                color: $MarineBlue;
+                font-weight: 700;
+            }
+            &:after{
+                content:'Yearly';
+                position: absolute;
+                top: calc(50% - 8px);
+                right: -80px;
+                color: $CoolGray;
+            }
+            .inner{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: white;
+                position: absolute;
+                left: 3px;                
+            }
+        }
+    }
+}
+
+.checked-outer-inner{
+    background-color: white;
+    left:calc(100% - 3px - 20px);
+}        
+.checked-outer{
+    background-color: $MarineBlue;
+}
+.checked-outer-before{
+    color: $CoolGray;
+}
+.checked-outer-after{
+    color: $MarineBlue;
+    font-weight: 700;
+}

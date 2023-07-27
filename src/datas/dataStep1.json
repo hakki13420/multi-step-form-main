@@ -1,0 +1,193 @@
+{
+    "sidebar":[
+        {
+            "id":1,
+            "title":" Step 1",
+            "description":"Your info",
+            "active":1
+        },
+        {
+            "id":2,
+            "title":" Step 2",
+            "description":"Select plan",
+            "active":0
+        },
+        {
+            "id":3,
+            "title":" Step 3",
+            "description":"Add-ons",
+            "active":0
+        },
+        {
+            "id":4,
+            "title":" Step 4",
+            "description":"Summary",
+            "active":0
+        }
+    ],
+    "title":[
+        {
+            "title":"Personal info",
+            "description":"Please provide your name, email address, and phone number."
+        },
+        {
+            "title":"Select your plan",
+            "description":"You have the option of monthly or yearly billing."
+        },
+        {
+            "title":"Pick add-ons",
+            "description":"Add-ons help enhance your gaming experience."  
+        },
+        {  
+            "title":"Finishing up",
+            "description":"Double-check everything looks OK before confirming."
+        },
+        {  
+            "title":"",
+            "description":""
+        }
+    ],
+    "content":[
+        [
+            {
+                "id":1,
+                "label":"Name",
+                "name":"name",
+                "type":"text",
+                "placeholder":"e.g. Stephen King"
+            },
+            {
+                "id":2,
+                "label":"Email Address",
+                "name":"email",
+                "type":"email",
+                "placeholder":"e.g. stephenking@lorem.com"
+            },
+            {
+                "id":3,
+                "label":"Phone Number",
+                "name":"phone",
+                "type":"text",
+                "placeholder":"e.g. +1 234 567 890"
+            }
+        ],        
+        {
+        "monthly":[
+           {
+                "id":1,
+                "label":"Arcade",
+                "name":"plan",
+                "price":"$9/mo"
+            },
+            {
+                "id":2,
+                "label":"Advanced",
+                "name":"plan",
+                "type":"radio",
+                "price":"$12/mo"
+            },
+            {
+                "id":3,
+                "label":"Pro",
+                "name":"plan",
+                "type":"radio",
+                "price":"$15/mo"
+            }                    
+        ],    
+        "yearly":[
+            {
+                "id":1,
+                "label":"Arcade",
+                "name":"plan",
+                "price":"$90/yr",
+                "free":"2 months free"
+            },
+            {
+                "id":2,
+                "label":"Advanced",
+                "name":"plan",
+                "type":"radio",
+                "price":"$120/yr",
+                "free":"2 months free"
+            },
+            {
+                "id":3,
+                "label":"Pro",
+                "name":"plan",
+                "type":"radio",
+                "price":"$150/yr",
+                "free":"2 months free"
+            }
+        ]
+        },
+        [
+            {
+                "id":1,
+                "label":"Online service",
+                "description":"Access to multiplayer games",
+                "name":"addOnn",
+                "price":"+$1/mo"
+            },
+            {
+                "id":2,
+                "label":"Larger storage",
+                "description":"Extra 1TB of cloud save",
+                "name":"addOnn",
+                "price":"+$2/mo"
+            },
+            {
+                "id":3,
+                "label":"Customizable Profile",
+                "description":"Custom theme on your profile",
+                "name":"addOnn",
+                "price":"+$2/mo"
+            }
+        ]
+    ],
+    "buttons":[
+        [
+            {"id":0},
+            {
+                "id":1,
+                "title":"Next Step",
+                "type":"next"
+            }
+        ],
+        [
+            {
+                "id":1,
+                "title":"Go Back",
+                "type":"prev"
+            },
+            {
+                "id":2,
+                "title":"Next Step",
+                "type":"next"
+            }
+        ],
+        [
+            {
+                "id":1,
+                "title":"Go Back",
+                "type":"prev"
+            },
+            {
+                "id":2,
+                "title":"Next Step",
+                "type":"next"
+            }
+        ],
+        [         
+            {
+                "id":1,
+                "title":"Go Back",
+                "type":"prev"
+            },
+            {
+                "id":2,
+                "title":"Confirm",
+                "type":"next"
+            }
+        ]
+    ]
+}

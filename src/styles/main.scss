@@ -1,0 +1,58 @@
+
+
+@import './general.scss';
+@import './mixins.scss';
+@import './button.scss';
+
+
+@import './colors.scss';
+@import './layout.scss';
+@import './sidebar.scss';
+@import './sideBarItem.scss';
+@import './RadioBoxItem.scss';
+@import './checkBoxItem.scss';
+@import './checkBoxItemCard.scss';
+@import './preview.scss';
+@import './previewItem.scss';
+@import './thank.scss';
+
+@import './title.scss';
+
+@import './content.scss';
+@import './form.scss';
+@import './formItem.scss';
+
+
+@import './footer.scss';
+
+body{
+    background-color: $PastelBlue;
+    padding: 2rem 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Ubuntu serif;
+
+
+    @media screen and (max-width:375px) {
+        padding: 0 0 10px;
+        place-items:inherit;        
+        position: relative;
+        height: 100%;
+        
+    }
+}
+
+
+.main{
+    @include dflex(column, unset, unset, unset);
+    grid-area: main;
+
+    @media screen and (max-width:375px) {
+        background-color: white;
+        margin-top:40px;
+        width: 82vw;
+        border-radius: 10px;
+        margin-top:-40px;
+    }
+}

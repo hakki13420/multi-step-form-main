@@ -1,0 +1,8 @@
+
+.next-button {
+     @include button(6rem, 2.5rem, 7px 15px, 4px, blue, white);
+}
+
+.prev-button {
+    @include button(6rem, 2.5rem, 7px 15px, 0, transparant,blue);
+}

@@ -1,0 +1,15 @@
+.footer{
+    //grid-area: footer;
+    @include dflex(row, space-between, center, unset);
+    //padding: 0 1rem 1rem;
+
+
+    @media screen and (max-width:375px) {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background-color: white;
+        padding: 0.5rem;  
+    }
+}
